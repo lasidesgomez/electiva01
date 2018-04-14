@@ -1,0 +1,80 @@
+
+(3) Examine la siguiente lista de APIs de Java e identifique el patrón de diseño presente.
+Para cada patrón encontrado describa porque el API lo sigue. Cada grupo de API
+Enumerado corresponde al mismo patrón de diseño.
+a. Creacionales (Abstract Factory, Builder, Singleton, Static Factory Method)
+
+i. 
+- java.lang.Runtime
+- java.lang.Desktop
+R//: acá se utilizaría el patrón  Builder  da herramienta  para el diseño y programación para construir 
+ii.
+- com.google.common.collect.MapMaker
+R//: aca se utilizaria el patron  Abstract Factory da herramienta  para el diseño y programación 
+
+iii.
+- java.util.Calendar
+- java.text.NumberFormat
+- java.nio.charset.Charset
+R//=Clase abstracta se utiliza el patrón Abstract Factory que proporciona métodos para convertir un instante específico en el tiempo 
+
+iv.
+- javax.xml.parsers.DocumentBuilderFactory
+- javax.xml.transform.TransformerFactory
+- javax.xml.xpath.XPathFactory
+R//= Factory Method  este patro se busca un subclase
+
+b. Structural (Adapter, Decorator, Flyweight)
+i.
+- java.lang.Integer
+- java.lang.Boolean
+
+R/= patrón Adapter ajusta un valor del tipo primitivo int en un objeto
+
+ii.
+- java.io.InputStreamReader
+- java.io.OutputStreamWriter
+- java.util.Arrays
+
+R/=Flyweight su capacidad es muy baja en seguridad
+iii.
+- java.io.BufferedInputStream
+- java.io.DataInputStream
+- java.io.BufferedOutputStream
+- java.util.zip.ZipOutputStream
+- java.util.Collections#checkedList()
+
+R//=patrón Adapter. Una secuencia de entrada subyacente de una manera independiente de la máquina
+c. Behavioural (Chain of responsability, Command, Iterator, Observer, Strategy,
+Template Method)
+i.
+- javax.servlet.FilterChain
+R//=Chain of Responsibility iinvoca filtro en la cadena, o si el filtro que llama es el último filtro en la cadena, para invocar el recurso al final de la cadena.
+
+ii.
+- java.lang.Runnable
+- java.util.concurrent.Callable
+R/= El patrón de iterador cualquier clase cuyas instancias estén destinadas a ser ejecutadas por un hilo
+
+iii.
+- java.util.Iterator
+R/= El patrón de iterador Los iteradores permiten que la persona que llama elimine elementos de la colección subyacente durante la iteración con una semántica bien definida
+
+iv.
+- java.util.Comparator
+- javax.servlet.Filter
+R//=Strategy  Un filtro es un objeto que realiza tareas de filtrado en la solicitud a un recurso (un servlet o contenido estático), o en la respuesta de un recurso, o en ambos.
+v.
+- java.util.AbstractList, java.util.AbstractSet,
+java.util.AbstractMap
+- java.io.InputStream, java.io.OutputStream, java.io.Reader,
+java.io.Writer
+R/=Strategy su clase proporciona una implementación esquemática de la interfaz List para minimizar el esfuerzo requerido para implementar esta interfaz respaldada por un almacén de datos de "acceso aleatorio" (como una matriz).
+
+vi.
+- java.util.EventListener
+- java.util.Observer/java.util.Observable
+
+R/=Observer.). Una interfaz de etiquetado que todas las interfaces de escucha de eventos deben ampliar.
+
+Una introducción a la interfaz Observer y a la clase Observable usando la arquitectura

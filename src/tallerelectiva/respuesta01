@@ -1,0 +1,46 @@
+
+(1). Enumero los principio de GRASP:
+
+
+- ALTA COHESION: la información que almacena una clase debe de ser coherente y debe estar, en la medida de lo posible, relacionada con la clase.
+
+- BAJO ACOPLAMIENTO: Es la idea de tener las clases lo menos ligadas entre sí que se pueda, de tal forma que, en caso de producirse una modificación en alguna de ellas,
+					 tenga la mínima repercusión posible en el resto de clases, potenciando la reutilización, y disminuyendo la dependencia entre las clases.
+
+
+(a). PATRONES  CREACIONALES: Los patrones de creación proporcionan formas de instanciar objetos individuales o grupos de objetos relacionados.
+
+Abstract Factory. 
+Builder.
+Factory Method.
+Prototype.
+Singleton.
+
+(b). PATRONES  ESTRUCTURALES: Los patrones estructurales proporcionan una manera de definir las relaciones entre clases u objetos.
+
+Adapter.
+Bridge
+Composite.
+Decorator.
+Facade.
+Flyweight. 
+Proxy. 
+
+(c). PATRONES DE ACOPLAMIENTO: Los patrones de comportamiento definen maneras de comunicación entre clases y objetos.
+
+Chain of Responsibility. 
+Command.
+Interpreter.
+Iterator.
+Mediator.
+Memento. 
+Observer.
+State.
+Strategy.
+Template Method. 
+Visitor. 
+
+
+
+ 
+ 

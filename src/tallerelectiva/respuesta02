@@ -1,0 +1,12 @@
+
+
+(2) Listar las propiedades que deben cumplir un método de comparación de objetos.
+
+
+El metoodo equals implementa una relación de equivalencia en referencias de objetos NO nulos:
+
+Es reflexivo : para cualquier valor de referencia no nulo x, x.equals(x)debe regresar true.
+Es simétrica : para cualquier valor de referencia que no son nulos xy y, x.equals(y) deberían volver true si y sólo si y.equals(x) retorna true.
+Es transitiva : para cualquier valor de referencia que no son nulos x, y y z, si x.equals(y)vuelve true y y.equals(z)vuelve true, entonces x.equals(z)debe devolver true.
+Es coherente : para cualquier valor de referencia no nulo xy y, múltiples invocaciones de x.equals(y)devolución true constante o retorno sistemático false, siempre que no equals se modifique la información utilizada en las comparaciones sobre los objetos.
+Para cualquier valor de referencia no nulo x, x.equals(null)debe devolver false.
